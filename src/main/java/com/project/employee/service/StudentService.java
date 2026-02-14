@@ -16,4 +16,8 @@ public class StudentService {
     public boolean hired(){
         return true;
     }
+
+    public String nickname(){
+       return  "shroff";
+    }
 }

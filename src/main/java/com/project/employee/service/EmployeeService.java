@@ -12,13 +12,19 @@ public class EmployeeService {
     private final EmployeeRepository employeeRepository;
 
     public int getValue() {
+
         return 10;
     }
+
     public Employee getName(){
         return employeeRepository.findById(Long.valueOf(1));
     }
 
     public boolean isJoined(){
         return true;
+    }
+
+    public String Name(){
+        return "Nikhil ";
     }
 }

@@ -1,10 +1,13 @@
 package com.project.employee.controller;
 
 
+
+import com.project.employee.service.EmployeeService;
 import com.project.employee.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,6 +23,7 @@ public class StudentController {
 
     @GetMapping("/name")
     public String studentName(){
+
         return studentService.name();
     }
 
@@ -34,6 +38,15 @@ public class StudentController {
     public boolean hired(){
         return studentService.hired();
     }
+
+    @GetMapping("/nick")
+    public String Student(){
+        return studentService.nickname();
+
+
+    }
+
+
 
 
 

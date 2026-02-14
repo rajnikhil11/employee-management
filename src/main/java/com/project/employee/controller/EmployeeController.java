@@ -38,4 +38,8 @@ public class EmployeeController {
 
         return employeeService.isJoined();
     }
+
+    public String empName(){
+        return employeeService.Name();
+    }
 }
