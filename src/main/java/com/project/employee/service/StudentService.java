@@ -20,4 +20,8 @@ public class StudentService {
     public String nickname(){
        return  "shroff";
     }
+
+    public String home(){
+        return "vaishali";
+    }
 }
