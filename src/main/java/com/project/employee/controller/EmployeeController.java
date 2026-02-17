@@ -39,7 +39,13 @@ public class EmployeeController {
         return employeeService.isJoined();
     }
 
+    @GetMapping("/empname")
     public String empName(){
         return employeeService.Name();
+    }
+
+    @GetMapping("/empsallary")
+    public long sallary(){
+        return employeeService.Sallary();
     }
 }

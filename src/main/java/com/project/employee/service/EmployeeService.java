@@ -27,4 +27,8 @@ public class EmployeeService {
     public String Name(){
         return "Nikhil ";
     }
+
+    public long Sallary(){
+        return 50000;
+    }
 }
