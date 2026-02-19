@@ -29,23 +29,28 @@ public class EmployeeController {
     }
 
     @GetMapping("/name")
-    public Employee Name(){
+    public Employee Name() {
         return employeeService.getName();
     }
 
     @GetMapping("/join")
-    public boolean joined(){
+    public boolean joined() {
 
         return employeeService.isJoined();
     }
 
     @GetMapping("/empname")
-    public String empName(){
+    public String empName() {
         return employeeService.Name();
     }
 
     @GetMapping("/empsallary")
-    public long sallary(){
+    public long sallary() {
         return employeeService.Sallary();
+    }
+
+    @GetMapping("/salaried")
+    public boolean salaried() {
+        return employeeService.salaried();
     }
 }

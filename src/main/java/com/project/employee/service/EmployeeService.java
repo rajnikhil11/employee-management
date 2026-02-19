@@ -31,4 +31,7 @@ public class EmployeeService {
     public long Sallary(){
         return 50000;
     }
+    public boolean salaried(){
+        return true;
+    }
 }
