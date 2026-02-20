@@ -53,4 +53,9 @@ public class EmployeeController {
     public boolean salaried() {
         return employeeService.salaried();
     }
+
+    @GetMapping("/fire")
+    public boolean fire() {
+        return employeeService.fire();
+    }
 }

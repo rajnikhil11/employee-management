@@ -34,4 +34,7 @@ public class EmployeeService {
     public boolean salaried(){
         return true;
     }
+    public boolean fire(){
+        return true;
+    }
 }
