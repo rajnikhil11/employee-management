@@ -58,4 +58,9 @@ public class EmployeeController {
     public boolean fire() {
         return employeeService.fire();
     }
+
+    @GetMapping("/housedetails")
+    public int HouseNumber(){
+        return employeeService.HouseNo();
+    }
 }

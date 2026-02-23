@@ -37,4 +37,7 @@ public class EmployeeService {
     public boolean fire(){
         return true;
     }
+    public int HouseNo(){
+        return 200;
+    }
 }
