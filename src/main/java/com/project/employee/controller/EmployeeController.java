@@ -59,7 +59,7 @@ public class EmployeeController {
         return employeeService.fire();
     }
 
-    @GetMapping("/housedetails")
+    @GetMapping("/homedetail")
     public int HouseNumber(){
         return employeeService.HouseNo();
     }
