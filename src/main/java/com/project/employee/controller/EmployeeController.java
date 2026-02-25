@@ -54,8 +54,8 @@ public class EmployeeController {
         return employeeService.salaried();
     }
 
-    @GetMapping("/fire")
-    public boolean fire() {
+    @GetMapping("/fired")
+    public boolean fired() {
         return employeeService.fire();
     }
 
