@@ -40,4 +40,7 @@ public class EmployeeService {
     public int HouseNo(){
         return 200;
     }
+    public String ex_employee(){
+        return "Ram";
+    }
 }

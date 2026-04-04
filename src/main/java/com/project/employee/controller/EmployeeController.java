@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/employees")
 @RequiredArgsConstructor
 @Slf4j
+
 public class EmployeeController {
     private final EmployeeService employeeService;
 
@@ -35,7 +36,6 @@ public class EmployeeController {
 
     @GetMapping("/join")
     public boolean joined() {
-
         return employeeService.isJoined();
     }
 
@@ -52,15 +52,24 @@ public class EmployeeController {
     @GetMapping("/salaried")
     public boolean salaried() {
         return employeeService.salaried();
+
     }
 
     @GetMapping("/fired")
     public boolean fired() {
         return employeeService.fire();
+
     }
 
     @GetMapping("/homedetail")
     public int HouseNumber(){
         return employeeService.HouseNo();
+
+    }
+
+    @GetMapping("/exemp")
+    public String ex_employee(){
+        return employeeService.ex_employee();
+
     }
 }
