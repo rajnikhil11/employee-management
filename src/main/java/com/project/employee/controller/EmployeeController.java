@@ -72,4 +72,9 @@ public class EmployeeController {
         return employeeService.ex_employee();
 
     }
+
+    @GetMapping("/worker")
+    public String worker(){
+        return employeeService.workers();
+    }
 }

@@ -43,4 +43,7 @@ public class EmployeeService {
     public String ex_employee(){
         return "Ram";
     }
+    public String workers(){
+        return "ram";
+    }
 }
