@@ -47,7 +47,7 @@ public class StudentController {
     }
 
     @GetMapping("/address")
-    public String adress(){
+    public String address(){
         return studentService.home();
     }
 
